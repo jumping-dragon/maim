@@ -1,0 +1,16 @@
+[package]
+name = "maim"
+version = "0.1.0"
+edition = "2021"
+description = "persistence tool for attacking aws, azure, gcp accounts"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aws-config = "0.55.0"
+aws-sdk-config = "0.25.1"
+aws-sdk-iam = "0.25.1"
+serde_json = "1"
+urlencoding = "2.1.2"
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
